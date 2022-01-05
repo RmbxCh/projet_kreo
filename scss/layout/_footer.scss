@@ -1,0 +1,63 @@
+footer{
+    position: relative;
+    display: flex;
+}
+
+.l-main-footer{
+    height: 200px;
+    max-width: 100%;
+}
+
+.l-footer-rs{
+    color: map-get($colors, main);
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 3rem 0 1.5rem 0;
+    position: relative;
+}
+
+.l-footer-rs::after{
+    position: absolute;
+    display: block;
+    background-color: map-get($colors, main);
+    bottom: -3;
+    content: " ";
+    height: 0.05rem;
+    width: 20rem;
+}
+
+.l-footer-rs i::after{
+    display: none;
+}
+
+.l-footer-text img{
+    opacity: 0.13;
+    width: 6rem;
+    padding: 1.5rem;
+}
+
+.l-footer-text p{
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.l-footer-copyright{
+    font-family: map-get($fonts, second);
+	color: map-get($colors, main);
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+.l-footer-copyright a{
+    text-decoration: none;
+    color: #9fa0a4;
+}
+
+//media queries
+@media screen and (min-width: 720px){
+    .l-footer-rs{
+        font-size: 2rem;
+    }
+}

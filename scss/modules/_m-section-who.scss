@@ -1,0 +1,28 @@
+.m-main-section-who{
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    padding: 2rem 0;
+}
+
+.m-main-section-who p{
+    padding: 1rem;
+}
+
+.m-section-who-content{
+    width: 90%;
+
+}
+
+//media queries
+@media screen and (min-width: 720px){
+    .m-section-who-content{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .m-section-who-content{
+        width: 40%;
+    }
+}

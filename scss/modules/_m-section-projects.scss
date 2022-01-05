@@ -1,0 +1,39 @@
+.m-main-section-projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.m-main-section-projects p{
+    text-align: center;
+    padding: 1rem;
+}
+
+.m-main-images{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0;
+}
+
+.m-main-images img{
+    width: 50%;
+}
+
+//media queries
+@media screen and (min-width: 720px){
+    .m-main-images img{
+        width: 33.33%
+    }
+    .m-main-section-projects h1, .m-main-section-projects p{
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .m-main-images img{
+        width: 25%;
+    }
+    .m-main-section-projects h1, .m-main-section-projects p{
+        text-align: left;
+    }
+}

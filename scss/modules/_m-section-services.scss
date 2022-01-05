@@ -1,0 +1,28 @@
+.m-main-section-services{
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    padding: 1rem 0;
+}
+
+.m-main-section-services p{
+    padding: 1rem 0;
+}
+
+.m-section-services-content{
+    width: 100%;
+    padding : 0 0.5rem;
+}
+
+//media queries
+@media screen and (min-width: 720px){
+    .m-section-services-content{
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .m-section-services-content{
+        width: 30%;
+    }
+}

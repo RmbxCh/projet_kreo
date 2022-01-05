@@ -1,0 +1,40 @@
+.m-section-form-content{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.m-section-form-content form{
+    padding: 1rem 0;
+}
+.m-section-form-contact{
+    padding: 2rem 1rem;
+}
+
+//media queries
+@media screen and (min-width: 720px){
+    .m-section-form-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .m-section-form-content form{
+        width: 45%;
+    }
+    .m-section-form-contact{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .m-section-form-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .m-section-form-content form{
+        width: 45%;
+    }
+    .m-section-form-contact{
+        width: 45%;
+    }
+}

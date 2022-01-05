@@ -1,0 +1,74 @@
+//menu hamburger
+
+.l-main-hamburger{
+	display: block;
+	color: map-get($colors, decoration);
+	font-size: 1.3rem;
+	padding: 1rem;
+}
+
+.l-main-nav{
+	display: none;
+	font-family: map-get($fonts, second);
+	font-variant: small-caps;
+}
+
+.l-main-nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+.l-main-nav li{
+	display: block;
+	list-style: none;
+}
+
+.l-main-nav a{
+	display: block;
+	padding: 0.8rem;
+	text-decoration: none;
+	color: map-get($colors, second);
+}
+
+.l-main-nav a:active, .l-main-nav a:hover{
+	color: map-get($colors, decoration);
+	border-bottom: map-get($colors, second) solid 0.12rem;
+}
+
+.l-main-nav.is-active{
+	display: block;
+	position: absolute;
+	right:-100%;
+	transform: translateX(-100%);
+	transition-duration: 5sec;
+	z-index: 20;
+	background-color: map-get($colors, main);
+	width: 100%;
+}
+
+//media queries
+
+@media screen and (min-width: 720px){
+	.l-main-nav{
+		display: inline-block;
+	}
+
+	.l-main-nav li{
+		display: inline-block;
+	}
+	#menuHamburger{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 960px){
+	.l-main-nav{
+		display: inline-block;
+	}
+	.l-main-nav li {
+		display: inline-block;
+	}
+	#menuHamburger{
+		display: none;
+	}
+}

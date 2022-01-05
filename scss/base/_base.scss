@@ -1,0 +1,57 @@
+html{
+    font-size: 16px;
+}
+
+body{
+	min-width: 320px;
+	background-color: #101417; /*gris foncé*/
+}
+
+h1{
+    font-family: map-get($fonts, second);
+    color: map-get($colors, second);
+    font-size: 1.4rem;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-align: center;
+	margin: 2rem;
+	position: relative;
+}
+
+h2{
+	font-family: map-get($fonts, second);
+	color: map-get($colors, decoration);
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 1rem 0;
+}
+
+h3{
+	font-family: map-get($fonts, main);
+	color: map-get($colors, second);
+	font-size: 1.05rem;
+	font-weight: bold;
+}
+
+p{
+	font-family: map-get($fonts, main);
+	color: map-get($colors, main);
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+//media queries
+@media screen and (min-width: 720px){
+    h1{
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 960px){
+    h1{
+        text-align: left;
+    }
+}

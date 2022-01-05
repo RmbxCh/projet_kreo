@@ -1,0 +1,107 @@
+header{
+    background: url('../images/hero-bg.jpg') center no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+//navigation
+.l-header-menu{
+    display: flex; //il faut un fond noir en mobile avec border-bottom gris
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.l-header-logo{
+    background-color: map-get($colors, decoration);
+    width: 3rem;
+	padding: 1rem;
+}
+
+.l-header-rs{
+    display: none;
+    color: map-get($colors, second);
+}
+
+.l-header-rs a{
+    color: map-get($colors, second);
+}
+
+.l-header-rs i{
+    margin: 0.5rem;
+}
+
+//texte
+header p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+}
+
+.l-header-text{
+    color: map-get($colors, second);
+    font-family: map-get($fonts, second);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.l-header-text a{
+    display: inline-block;
+	color: map-get($colors, second);
+	text-decoration: none;
+	border-bottom: grey solid 0.01rem;
+}
+
+.l-header-text::after{
+    position: absolute;
+    bottom: 0;
+    background-color: map-get($colors, decoration);
+    display: block;
+    content: "";
+    width: 6.5rem;
+    height: 0.2rem;
+}
+
+.l-header-dots{
+    text-align: center;
+}
+
+.l-header-dots .fas{
+    color: map-get($colors, second);
+	font-size: 0.55rem;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+}
+
+//media queries
+@media screen and (min-width: 720px){
+    header p{
+        width: 50%;
+        margin: auto;
+    }
+    .l-header-text{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .l-header-rs{
+		display: block;
+        border-left: grey, solid, 0.1rem;
+    }
+    header p{
+        text-align: left;
+        width: 50%;
+        margin: 0.2rem;
+    }
+    .l-header-text{
+        text-align: left;
+    }
+    .l-header-dots{
+        text-align: left;
+        margin: 0 2.2rem;
+    }
+}

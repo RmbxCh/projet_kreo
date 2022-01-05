@@ -1,0 +1,59 @@
+.m-main-section-quote{
+	background-color: map-get($colors, decoration);
+	padding: 3rem;
+}
+
+.m-quote-text{
+	color: map-get($colors, second);
+	font-size: 1.5rem;
+	text-align: center;
+	text-shadow: 0.02rem 0 0 black;
+	width: 80%;
+	padding: 0 1rem;
+	margin: 0 auto;
+}
+
+.m-quote-signature{
+	display: flex;
+	flex-flow: row wrap;
+    font-weight: bold;
+	padding: 1rem;
+}
+
+.m-quote-signature img{
+	width: 5rem;
+	height: auto;
+	border: map-get($colors, second) solid 8px;
+	border-radius: 4rem;
+	margin: 0 auto;
+}
+
+.m-quote-autor{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 25%;
+	margin: 0 auto;
+}
+
+.m-quote-autor-name{
+	color: map-get($colors, second);
+	font-variant: small-caps;
+    font-family: map-get($fonts, second);
+}
+
+.m-quote-autor-title{
+	color: #101417;
+	font-size: 0.8rem;
+    font-family: map-get($fonts, second);
+}
+
+.m-quote-dots{
+	color: map-get($colors, second);
+	text-align: center;
+	font-size: 0.5rem;
+}
+
+.m-quote-dots .fa-circle{
+	margin: 0.18rem;
+}

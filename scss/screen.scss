@@ -1,0 +1,20 @@
+//reset
+@import "tools/reset.scss";
+
+//bases
+@import "base/variables.scss";
+@import "base/base.scss";
+
+//layout
+@import "layout/layout.scss";
+@import "layout/nav.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+
+//main
+@import "modules/m-section-projects.scss";
+@import "modules/m-section-services.scss";
+@import "modules/m-section-who.scss";
+@import "modules/m-section-team.scss";
+@import "modules/m-section-jaune.scss";
+@import "modules/m-section-form.scss";
